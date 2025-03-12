@@ -1,22 +1,97 @@
+/* Загальні стилі */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f8fc;
-    text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
 
+/* Контейнер */
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Список завдань */
 .tasks {
-    margin: 50px auto;
-    width: 300px;
-    background: white;
-    border: 1px solid #cdd3d7;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
 }
 
+/* Заголовок */
 .tasks-header {
-    background: #f0f1f2;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: green;
+  background: #5c67f2;
+  color: white;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Список завдань */
+.tasks-list {
+  padding: 20px 0;
+}
+
+/* Кожен пункт списку */
+.tasks-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tasks-list-item:hover {
+  background: #f9f9f9;
+}
+
+/* Галочка */
+.tasks-list-cb {
+  display: none;
+}
+
+.tasks-list-mark {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #5c67f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.tasks-list-cb:checked + .tasks-list-mark {
+  background: #5c67f2;
+  border-color: #5c67f2;
+  position: relative;
+}
+
+.tasks-list-cb:checked + .tasks-list-mark::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+}
+
+/* Текст завдання */
+.tasks-list-desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.tasks-list-cb:checked ~ .tasks-list-desc {
+  text-decoration: line-through;
+  color: #777;
 }
