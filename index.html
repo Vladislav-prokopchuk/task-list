@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="ua">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Список завдань</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список завдань</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="container">
     <div class="tasks">
-        <div class="tasks-header">
-            <h1 class="tasks-title">Список завдань</h1>
-        </div>
-        <fieldset class="tasks-list">
-            <label class="tasks-list-item">
-                <input type="checkbox" name="task_1" class="tasks-list-cb" checked>
-                <span class="tasks-list-mark"></span>
-                <span class="tasks-list-desc">Опанувати HTML та CSS</span>
-            </label>
-            <label class="tasks-list-item">
-                <input type="checkbox" name="task_2" class="tasks-list-cb" checked>
-                <span class="tasks-list-mark"></span>
-                <span class="tasks-list-desc">Опанувати Git та GitHub</span>
-            </label>
-            <label class="tasks-list-item">
-                <input type="checkbox" name="task_3" class="tasks-list-cb">
-                <span class="tasks-list-mark"></span>
-                <span class="tasks-list-desc">Опанувати JavaScript</span>
-            </label>
-        </fieldset>
+      <header class="tasks-header">
+        <h1 class="tasks-title">📌 Мій список завдань</h1>
+      </header>
+      <fieldset class="tasks-list">
+        <label class="tasks-list-item">
+          <input type="checkbox" name="task_1" class="tasks-list-cb" checked>
+          <span class="tasks-list-mark"></span>
+          <span class="tasks-list-desc">🔹 Опанувати HTML та CSS</span>
+        </label>
+        <label class="tasks-list-item">
+          <input type="checkbox" name="task_2" class="tasks-list-cb" checked>
+          <span class="tasks-list-mark"></span>
+          <span class="tasks-list-desc">🔹 Опанувати Git та GitHub</span>
+        </label>
+        <label class="tasks-list-item">
+          <input type="checkbox" name="task_3" class="tasks-list-cb">
+          <span class="tasks-list-mark"></span>
+          <span class="tasks-list-desc">🔹 Опанувати JavaScript</span>
+        </label>
+        <label class="tasks-list-item">
+          <input type="checkbox" name="task_4" class="tasks-list-cb">
+          <span class="tasks-list-mark"></span>
+          <span class="tasks-list-desc">🔹 Опанувати Node.js</span>
+        </label>
+      </fieldset>
     </div>
+  </div>
 </body>
-
 </html>
